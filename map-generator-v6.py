@@ -4,6 +4,7 @@ import math
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
 
+# Coordinates (x,y) are relative to the top-left of the area mapped
 GEO_ORIGIN = {"lat": 47.661378, "lon": -122.365703}
 
 rooms = [
@@ -18,8 +19,10 @@ rooms = [
 zones = [
     {"id": "stage", "name": "VIP Area / Main Stage", "parent": "annex", "x": 23, "y": 17, "w": 5, "h": 8, "color": "#B7B5B5"},
     {"id": "booth", "name": "Sound Booth", "parent": "annex", "x": 1.5, "y": 18.5, "w": 2, "h": 4, "color": "#4682B4"},
+    {"id": "annex_pole", "name": "pole", "parent": "annex", "x": 9, "y": 16.5, "w": .5, "h": .5, "color": "#9D5656"},
     {"id": "bathroom_annex", "name": "Bathrooms", "parent": "annex", "x": 0, "y": 17, "w": 1.5, "h": 6, "color": "#E6ADE6"},
     {"id": "bathroom_hallway", "name": "Bathrooms", "parent": "hallway", "x": 18, "y": 12, "w": 10, "h": 5, "color": "#E6ADE6"},
+    {"id": "photobooth", "name": "Photobooth", "parent": "hallway", "x": 19, "y": 9, "w": 4, "h": 1.25, "color":  "#4682B4"},
     {"id": "lobby", "name": "Lobby", "parent": "hallway", "x": 23, "y": 0, "w": 5, "h": 3, "color": "#FFA07A"},
     {"id": "bar", "name": "Main Bar__", "parent": "front_room", "x": 9, "y": 7.5, "w": 9, "h": 1.5, "color": "#9D5656"},
 ]
@@ -29,6 +32,7 @@ doors = [
     {"name": "Hallway Turn", "x": 23.5, "y": 8.75, "w": 4, "h": 0.5, "type": "gap"},
     {"name": "Patio Access", "x": 4, "y": 8.75, "w": 2, "h": 0.5, "type": "gap"},
     {"name": "Hall->Annex", "x": 6, "y": 11.75, "w": 3, "h": 0.5, "type": "gap"},
+    {"name": "Hall->Front_Room", "x": 22.75, "y": 5.5, "w": .5, "h": 1.25, "type": "gap"},
     {"name": "Street Entry", "x": 25.5, "y": 0, "w": 1, "h": 0.5, "type": "gap"},
     {"name": "bathroom0", "x": 0, "y": 18, "w": 0.3, "h": 3.5, "type": "gap"},
     {"name": "bathroom1", "x": 25.5, "y": 11.75, "w": 1.5, "h": 0.5, "type": "gap"},
@@ -41,17 +45,25 @@ polygons = [
 
 pins: List[Dict[str, Any]] = [
     {"id": "pin_entrance", "name": "Entrance", "x": 25.8, "y": 0.8, "kind": "entrance", "color": "#1E90FF"},
-    {"id": "pin_hall_turn", "name": "Hall Turn", "x": 25.0, "y": 8.6, "kind": "corner", "color": "#1E90FF"},
+    {"id": "pin_hall_turn", "name": "Hall Turn", "x": 25.0, "y": 9, "kind": "corner", "color": "#1E90FF"},
 ]
 
 anchors: List[Dict[str, Any]] = [
+    {"id": "anchor_annex_01", "name": "Anchor-A1", "x": 7, "y": 24.5, "kind": "corner", "color": "#FF1E44"},
+    {"id": "anchor_annex_02", "name": "Anchor-A2", "x": 15, "y": 15, "kind": "corner", "color": "#FF1E44"},
+    {"id": "anchor_annex_03", "name": "Anchor-A3", "x": 21, "y": 24.5, "kind": "corner", "color": "#FF1E44"},
+    {"id": "anchor_patio_01", "name": "Anchor-P1", "x": 6, "y": 2, "kind": "corner", "color": "#FF1E44"},
+    {"id": "anchor_patio_02", "name": "Anchor-P2", "x": 2, "y": 5, "kind": "corner", "color": "#FF1E44"},
+    {"id": "anchor_patio_03", "name": "Anchor-P3", "x": 7, "y": 8.5, "kind": "corner", "color": "#FF1E44"},
+    {"id": "anchor_frontroom_01", "name": "Anchor-F1", "x": 13, "y": 0.5, "kind": "corner", "color": "#FF1E44"},
+    {"id": "anchor_frontroom_02", "name": "Anchor-F2", "x": 19, "y": 0.5, "kind": "corner", "color": "#FF1E44"},
+    {"id": "anchor_frontroom_03", "name": "Anchor-F3", "x": 22.5, "y": 7.5, "kind": "corner", "color": "#FF1E44"},
 ]
 
 @dataclass(frozen=True)
 class Bounds:
     width_m: float
     height_m: float
-
 
 def meters_to_gps(x_meters: float, y_meters: float, origin: Dict[str, float]) -> Dict[str, float]:
     earth_radius = 6378137
