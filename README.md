@@ -1,4 +1,14 @@
-here:
+Added a few new minor features to the Substation map (pole, photobooth)
+- map-generator-v6.py
+- detailed-v6.svg
+- detailed-v6.geojson
+
+
+Added realistic, proposed anchor points based on notes from Substation walkthru with Todd
+- detailed-v6-with-anchors.geojson
+- detailed-v6-with-anchors.svg
+
+
 # mapping-tools
 
 This folder contains the venue mapping artifacts and generators.
