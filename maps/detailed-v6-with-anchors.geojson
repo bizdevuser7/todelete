@@ -1,0 +1,776 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Metadata",
+        "geo_origin_lat": 47.661378,
+        "geo_origin_lon": -122.365703,
+        "width_m": 28,
+        "height_m": 25
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.365703,
+          47.661378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "patio",
+        "name": "Patio",
+        "height": 9,
+        "type": "Room"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.365703,
+              47.661378
+            ],
+            [
+              -122.36559629761504,
+              47.661378
+            ],
+            [
+              -122.36559629761504,
+              47.66129715162443
+            ],
+            [
+              -122.365703,
+              47.66129715162443
+            ],
+            [
+              -122.365703,
+              47.661378
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hallway",
+        "name": "Hallway",
+        "height": 3,
+        "type": "Room"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36567632440375,
+              47.66129715162443
+            ],
+            [
+              -122.36532954165263,
+              47.66129715162443
+            ],
+            [
+              -122.36532954165263,
+              47.6612702021659
+            ],
+            [
+              -122.36567632440375,
+              47.6612702021659
+            ],
+            [
+              -122.36567632440375,
+              47.66129715162443
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "entrance_hall",
+        "name": "",
+        "height": 9,
+        "type": "Room"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36539623064323,
+              47.661378
+            ],
+            [
+              -122.36532954165263,
+              47.661378
+            ],
+            [
+              -122.36532954165263,
+              47.66129715162443
+            ],
+            [
+              -122.36539623064323,
+              47.66129715162443
+            ],
+            [
+              -122.36539623064323,
+              47.661378
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "exit",
+        "name": "",
+        "height": 8,
+        "type": "Room"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36559629761504,
+              47.66136901684716
+            ],
+            [
+              -122.36558295981692,
+              47.66136901684716
+            ],
+            [
+              -122.36558295981692,
+              47.66129715162443
+            ],
+            [
+              -122.36559629761504,
+              47.66129715162443
+            ],
+            [
+              -122.36559629761504,
+              47.66136901684716
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "annex",
+        "name": "Annex",
+        "height": 13,
+        "type": "Room"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.365703,
+              47.6612702021659
+            ],
+            [
+              -122.36532954165263,
+              47.6612702021659
+            ],
+            [
+              -122.36532954165263,
+              47.661153421178966
+            ],
+            [
+              -122.365703,
+              47.661153421178966
+            ],
+            [
+              -122.365703,
+              47.6612702021659
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "front_room",
+        "name": "Front Room",
+        "height": 9,
+        "type": "Room"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36558295981692,
+              47.661378
+            ],
+            [
+              -122.36539623064323,
+              47.661378
+            ],
+            [
+              -122.36539623064323,
+              47.66129715162443
+            ],
+            [
+              -122.36558295981692,
+              47.66129715162443
+            ],
+            [
+              -122.36558295981692,
+              47.661378
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "stage",
+        "name": "VIP Area / Main Stage",
+        "parent": "annex",
+        "type": "Zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36539623064323,
+              47.6612252864017
+            ],
+            [
+              -122.36532954165263,
+              47.6612252864017
+            ],
+            [
+              -122.36532954165263,
+              47.661153421178966
+            ],
+            [
+              -122.36539623064323,
+              47.661153421178966
+            ],
+            [
+              -122.36539623064323,
+              47.6612252864017
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "booth",
+        "name": "Sound Booth",
+        "parent": "annex",
+        "type": "Zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36568299330281,
+              47.66121181167244
+            ],
+            [
+              -122.36565631770658,
+              47.66121181167244
+            ],
+            [
+              -122.36565631770658,
+              47.66117587906107
+            ],
+            [
+              -122.36568299330281,
+              47.66117587906107
+            ],
+            [
+              -122.36568299330281,
+              47.66121181167244
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bathroom_annex",
+        "name": "Bathrooms",
+        "parent": "annex",
+        "type": "Zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.365703,
+              47.6612252864017
+            ],
+            [
+              -122.36568299330281,
+              47.6612252864017
+            ],
+            [
+              -122.36568299330281,
+              47.66117138748465
+            ],
+            [
+              -122.365703,
+              47.66117138748465
+            ],
+            [
+              -122.365703,
+              47.6612252864017
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bathroom_hallway",
+        "name": "Bathrooms",
+        "parent": "hallway",
+        "type": "Zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36546291963383,
+              47.6612702021659
+            ],
+            [
+              -122.36532954165263,
+              47.6612702021659
+            ],
+            [
+              -122.36532954165263,
+              47.6612252864017
+            ],
+            [
+              -122.36546291963383,
+              47.6612252864017
+            ],
+            [
+              -122.36546291963383,
+              47.6612702021659
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lobby",
+        "name": "Lobby",
+        "parent": "hallway",
+        "type": "Zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36539623064323,
+              47.661378
+            ],
+            [
+              -122.36532954165263,
+              47.661378
+            ],
+            [
+              -122.36532954165263,
+              47.66135105054148
+            ],
+            [
+              -122.36539623064323,
+              47.66135105054148
+            ],
+            [
+              -122.36539623064323,
+              47.661378
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bar",
+        "name": "Main Bar__",
+        "parent": "front_room",
+        "type": "Zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36558295981692,
+              47.66131062635369
+            ],
+            [
+              -122.36546291963383,
+              47.66131062635369
+            ],
+            [
+              -122.36546291963383,
+              47.66129715162443
+            ],
+            [
+              -122.36558295981692,
+              47.66129715162443
+            ],
+            [
+              -122.36558295981692,
+              47.66131062635369
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "only_cans_bar",
+        "name": "",
+        "type": "Polygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.36554294642255,
+              47.6612702021659
+            ],
+            [
+              -122.36546291963383,
+              47.6612702021659
+            ],
+            [
+              -122.36546291963383,
+              47.6612252864017
+            ],
+            [
+              -122.36554294642255,
+              47.6612702021659
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pin_entrance",
+        "name": "Entrance",
+        "kind": "entrance",
+        "color": "#1E90FF",
+        "type": "Pin",
+        "x_m": 25.8,
+        "y_m": 0.8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3653588848085,
+          47.661370813477724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pin_hall_turn",
+        "name": "Hall Turn",
+        "kind": "corner",
+        "color": "#1E90FF",
+        "type": "Pin",
+        "x_m": 25.0,
+        "y_m": 8.6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.365369555047,
+          47.661300744885565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_patio_0",
+        "name": "Suggested Anchor 1",
+        "kind": "beacon",
+        "room": "patio",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 4.0,
+        "y_m": 4.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.36564964880752,
+          47.66133757581221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_patio_1",
+        "name": "Suggested Anchor 2",
+        "kind": "beacon",
+        "room": "patio",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 6.0,
+        "y_m": 6.75
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.36562297321127,
+          47.66131736371832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_hallway_0",
+        "name": "Suggested Anchor 1",
+        "kind": "beacon",
+        "room": "hallway",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 15.0,
+        "y_m": 10.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3655029330282,
+          47.66128367689517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_hallway_1",
+        "name": "Suggested Anchor 2",
+        "kind": "beacon",
+        "room": "hallway",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 19.0,
+        "y_m": 11.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.36544958183572,
+          47.66127469374233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_entrance_hall_0",
+        "name": "Suggested Anchor 1",
+        "kind": "beacon",
+        "room": "entrance_hall",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 25.5,
+        "y_m": 4.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.36536288614793,
+          47.66133757581221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_exit_0",
+        "name": "Suggested Anchor 1",
+        "kind": "beacon",
+        "room": "exit",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 8.5,
+        "y_m": 5.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.36558962871598,
+          47.66133308423579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_annex_0",
+        "name": "Suggested Anchor 1",
+        "kind": "beacon",
+        "room": "annex",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 14.0,
+        "y_m": 18.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.36551627082632,
+          47.66121181167244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_annex_1",
+        "name": "Suggested Anchor 2",
+        "kind": "beacon",
+        "room": "annex",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 18.0,
+        "y_m": 21.75
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.36546291963383,
+          47.661182616425705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_annex_2",
+        "name": "Suggested Anchor 3",
+        "kind": "beacon",
+        "room": "annex",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 10.0,
+        "y_m": 21.75
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3655696220188,
+          47.661182616425705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_front_room_0",
+        "name": "Suggested Anchor 1",
+        "kind": "beacon",
+        "room": "front_room",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 16.0,
+        "y_m": 4.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.36548959523007,
+          47.66133757581221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anchor_suggested_front_room_1",
+        "name": "Suggested Anchor 2",
+        "kind": "beacon",
+        "room": "front_room",
+        "suggested": true,
+        "color": "#FF1493",
+        "roleId": null,
+        "tgId": null,
+        "type": "Anchor",
+        "x_m": 19.5,
+        "y_m": 6.75
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.36544291293666,
+          47.66131736371832
+        ]
+      }
+    }
+  ]
+}
