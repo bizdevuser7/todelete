@@ -1,4 +1,5 @@
 
+
 # Venue Mapping Strategy + Operational Plan
 
 This document describes how we use **pins**, **anchors**, and repeated **TotemNode** placements to iteratively improve indoor positioning in dense crowds and to define high-confidence **handoff zones** (e.g., UWB experiences).
